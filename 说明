@@ -1,0 +1,19 @@
+java -jar xxx.jar > catalina.out  2>&1 & 
+
+
+---------------后台-------------------
+生成中奖名单
+http://127.0.0.1:8081/rankAward/generate?limitId=3
+
+发奖
+http://127.0.0.1:8081/rankAward/sendAward
+
+------------------前端------
+我的排名
+http://127.0.0.1:8081/rank/myRank?limitId=3&zyzsId=1
+
+//保存更新排名
+http://127.0.0.1:8081/rank/myRank?limitId=3&openId=1
+
+//获取总排名
+http://127.0.0.1:8081/rank/getAllRank?start=0&end=10&limitId=3
